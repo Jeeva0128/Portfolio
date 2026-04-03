@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Jeeva Nandan – Aspiring Cloud Engineer & DevOps Engineer. Full Stack MERN Developer building scalable cloud-native applications on AWS. Open to Cloud & DevOps roles." />
+  <meta name="keywords"
+    content="Cloud Engineer, DevOps Engineer, AWS, Cloud Native, CI/CD, Infrastructure, Full Stack Developer, MERN Stack, React, Node.js, MongoDB, Docker, Kubernetes, Terraform, Coimbatore, India" />
+  <meta name="author" content="Jeeva Nandan" />
+  <meta property="og:title" content="Jeeva Nandan | Aspiring Cloud Engineer & DevOps | Full Stack Developer" />
+  <meta property="og:description"
+    content="Building scalable cloud-native applications. Passionate about AWS, DevOps, and infrastructure automation." />
+  <meta property="og:type" content="website" />
+  <title>Jeeva Nandan | Cloud Engineer & DevOps | Full Stack Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================ -->
+  <!--  LOADER                                                       -->
+  <!-- ============================================================ -->
+  <div id="loader">
+    <div class="loader-logo">JN</div>
+    <div class="loader-bar">
+      <div class="loader-fill"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  BG ORBS                                                      -->
+  <!-- ============================================================ -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  NAVBAR                                                       -->
+  <!-- ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Jeeva<span style="color:var(--text-2)">.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-theme" id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <a href="#" class="btn-resume" id="resumeBtn" onclick="downloadResume(event)">
+          ↓ Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#experience" onclick="closeMobile()">Experience</a>
+    <a href="#education" onclick="closeMobile()">Education</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+    <a href="#" onclick="downloadResume(event)">↓ Download Resume</a>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  HERO                                                         -->
+  <!-- ============================================================ -->
+  <section id="hero" aria-label="Hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Left -->
+        <div class="hero-left">
+          <div class="hero-badge">Available for opportunities</div>
+
+          <div class="goal-tag">☁️ Aspiring Cloud Engineer & DevOps Engineer</div>
+
+          <h1 class="hero-name">
+            Jeeva <span class="grad">Nandan</span>
+          </h1>
+
+          <div class="typing-wrap">
+            <span class="typing-text" id="typingText"></span><span class="cursor"></span>
+          </div>
+
+          <p class="hero-desc">
+            Full Stack MERN developer on a mission to become a <strong style="color:var(--accent-3)">Cloud Engineer &
+              DevOps professional</strong>. Building scalable, cloud-native applications using modern web and AWS
+            technologies.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">
+              <span>🚀</span> View Projects
+            </a>
+            <a href="#contact" class="btn-outline">
+              <span>✉️</span> Contact Me
+            </a>
+            <a href="#" class="btn-outline" onclick="downloadResume(event)">
+              <span>↓</span> Resume
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-num">5+</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num"
+                style="background:var(--grad-2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+                AWS</div>
+              <div class="stat-label">Cloud Focus</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num"
+                style="background:var(--grad-2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+                DevOps</div>
+              <div class="stat-label">Career Goal</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual -->
+        <div class="hero-visual">
+          <div class="floating-card top-right">
+            <div class="floating-icon">☁️</div>
+            <div class="floating-val">Cloud</div>
+            <div style="font-size:0.7rem;color:var(--accent-3)">AWS · DevOps</div>
+          </div>
+
+          <div class="hero-card-main">
+            <div class="hero-avatar">JN</div>
+            <div class="hero-card-name">Jeeva Nandan</div>
+            <div class="hero-card-role" style="color:var(--accent-3);font-weight:600">☁️ Cloud Engineer & DevOps ·
+              Coimbatore</div>
+
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-header"><span>Cloud / AWS</span><span style="color:var(--accent-3)">🌱
+                    Growing</span></div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width:65%;background:var(--grad-2)"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header"><span>DevOps / CI-CD</span><span style="color:var(--accent-3)">🌱
+                    Growing</span></div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width:55%;background:var(--grad-2)"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header"><span>React / MERN</span><span>90%</span></div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width:90%"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header"><span>Node.js / Express</span><span>85%</span></div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width:85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-card bottom-left">
+            <div class="floating-icon">🚀</div>
+            <div class="floating-val"
+              style="background:var(--grad-2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+              DevOps</div>
+            <div style="font-size:0.7rem;color:var(--text-2)">Career Goal</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ATS-friendly hidden keywords -->
+  <div class="ats-keywords" aria-hidden="true">
+    Cloud Engineer, DevOps Engineer, AWS Cloud, Cloud Native, Infrastructure as Code, CI/CD Pipeline,
+    Docker, Kubernetes, Terraform, Jenkins, GitHub Actions, Linux, Bash Scripting,
+    Full Stack Developer, MERN Stack Developer, React Developer, Node.js Developer,
+    MongoDB, Express.js, JavaScript, HTML5, CSS3, Git, GitHub,
+    REST API, Web Developer, Software Engineer, Scalable Systems,
+    Cloud Architecture, EC2, S3, IAM, VPC, Coimbatore, India, B.Tech, Information Technology
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================ -->
+  <!--  ABOUT                                                        -->
+  <!-- ============================================================ -->
+  <section id="about" class="section-pad" aria-label="About Me">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Visual -->
+        <div class="about-visual reveal">
+          <div class="about-img-wrap"></div>
+          <div class="about-badge-wrap">
+            <div class="num">Final Year</div>
+            <div class="lbl">B.Tech IT Student</div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="about-content reveal reveal-delay-1">
+          <div class="tag">⚡ About Me</div>
+          <h2 class="section-title">Building Toward<br /><span class="text-gradient-2">Cloud & DevOps</span></h2>
+
+          <p class="about-text">
+            I'm <strong>Jeeva Nandan</strong>, a final-year B.Tech Information Technology student at <strong>PPG
+              Institute of Technology, Coimbatore</strong>. My ultimate goal is to become a <strong
+              style="color:var(--accent-3)">Cloud Engineer and DevOps professional</strong> — someone who bridges
+            development and infrastructure to ship reliable, scalable systems.
+          </p>
+          <p class="about-text">
+            My foundation is the <strong>MERN stack</strong>, built through my internship at App Innovation Company and
+            the Tamil Nadu government's <strong>Naan Mudhalvan initiative</strong>. This full-stack experience gives me
+            a developer's perspective when approaching cloud architecture and automation pipelines.
+          </p>
+          <p class="about-text">
+            I'm actively deepening my knowledge in <strong style="color:var(--accent-3)">AWS, CI/CD pipelines,
+              containerization (Docker), and infrastructure automation</strong> — the core pillars of modern DevOps. I
+            believe great cloud engineers are first great developers.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item reveal reveal-delay-1"
+              style="border-color:rgba(6,214,160,0.3);background:rgba(6,214,160,0.04)">
+              <div class="highlight-icon" style="background:rgba(6,214,160,0.15)">☁️</div>
+              <div class="highlight-text">
+                <h4 style="color:var(--accent-3)">Cloud Goal</h4>
+                <p>AWS · DevOps · Infrastructure Engineer</p>
+              </div>
+            </div>
+            <div class="highlight-item reveal reveal-delay-2" style="border-color:rgba(6,214,160,0.2)">
+              <div class="highlight-icon" style="background:rgba(6,214,160,0.12)">🔁</div>
+              <div class="highlight-text">
+                <h4>DevOps Mindset</h4>
+                <p>CI/CD · Docker · Automation</p>
+              </div>
+            </div>
+            <div class="highlight-item reveal reveal-delay-1">
+              <div class="highlight-icon">🎓</div>
+              <div class="highlight-text">
+                <h4>Education</h4>
+                <p>B.Tech IT – PPG Institute of Technology</p>
+              </div>
+            </div>
+            <div class="highlight-item reveal reveal-delay-2">
+              <div class="highlight-icon">💼</div>
+              <div class="highlight-text">
+                <h4>Internship</h4>
+                <p>MERN Stack Dev at App Innovation Co.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================ -->
+  <!--  SKILLS                                                       -->
+  <!-- ============================================================ -->
+  <section id="skills" class="section-pad" aria-label="Skills">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:560px;margin:0 auto 56px;">
+        <div class="tag">🛠 Tech Stack</div>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-sub" style="margin:0 auto">
+          A comprehensive toolkit for building full-stack web and cloud applications.
+        </p>
+      </div>
+
+      <div class="cloud-banner reveal">
+        <div class="cloud-banner-icon">☁️</div>
+        <div class="cloud-banner-text">
+          <h3>Targeting Cloud Engineering & DevOps Roles</h3>
+          <p>I'm a full-stack developer actively transitioning into <strong>cloud infrastructure and DevOps
+              engineering</strong>. My development background gives me a unique edge — I understand both the code and
+            the systems it runs on.</p>
+          <div class="cloud-banner-badges">
+            <span class="cloud-pill">AWS</span>
+            <span class="cloud-pill">Docker</span>
+            <span class="cloud-pill">CI/CD</span>
+            <span class="cloud-pill">GitHub Actions</span>
+            <span class="cloud-pill">Linux</span>
+            <span class="cloud-pill">Infrastructure Automation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-grid" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">
+
+        <div class="skill-card cloud-spotlight reveal" style="grid-column: span 2;">
+          <div class="skill-card-header">
+            <div class="skill-card-icon green"
+              style="background:rgba(6,214,160,0.18);width:56px;height:56px;font-size:28px">☁️</div>
+            <div>
+              <div class="skill-card-name" style="font-size:1.15rem">Cloud Engineering & DevOps</div>
+              <div class="skill-card-cat" style="color:var(--accent-3);font-weight:600">Primary Career Goal — Actively
+                Learning & Building</div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">AWS (EC2, S3, IAM, VPC)</span>
+            <span class="skill-pill">Cloud Architecture</span>
+            <span class="skill-pill">CI/CD Pipelines</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">GitHub Actions</span>
+            <span class="skill-pill">Linux / Bash</span>
+            <span class="skill-pill">Infrastructure Automation</span>
+            <span class="skill-pill">Monitoring & Logging</span>
+            <span class="skill-pill">Serverless</span>
+            <span class="skill-pill">Load Balancing</span>
+          </div>
+          <div class="cloud-card-badge">🚀 Actively Pursuing Cloud & DevOps Roles</div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-card-icon blue">🎨</div>
+            <div>
+              <div class="skill-card-name">Frontend</div>
+              <div class="skill-card-cat">UI & UX Development</div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">React.js</span>
+            <span class="skill-pill">Responsive Design</span>
+            <span class="skill-pill">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card-header">
+            <div class="skill-card-icon purple">⚙️</div>
+            <div>
+              <div class="skill-card-name">Backend</div>
+              <div class="skill-card-cat">Server & API Development</div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">Express.js</span>
+            <span class="skill-pill">REST API Design</span>
+            <span class="skill-pill">Authentication</span>
+            <span class="skill-pill">Middleware</span>
+            <span class="skill-pill">MVC Architecture</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-card-header">
+            <div class="skill-card-icon green">🗄️</div>
+            <div>
+              <div class="skill-card-name">Database</div>
+              <div class="skill-card-cat">Data Storage & Management</div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">Mongoose ODM</span>
+            <span class="skill-pill">NoSQL</span>
+            <span class="skill-pill">Schema Design</span>
+            <span class="skill-pill">CRUD Operations</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-card-icon blue">🔧</div>
+            <div>
+              <div class="skill-card-name">Tools & Workflow</div>
+              <div class="skill-card-cat">Development Ecosystem</div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">GitHub</span>
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">Postman</span>
+            <span class="skill-pill">npm</span>
+            <span class="skill-pill">Agile</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card-header">
+            <div class="skill-card-icon purple">🧠</div>
+            <div>
+              <div class="skill-card-name">Core Concepts</div>
+              <div class="skill-card-cat">CS Fundamentals</div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">Data Structures</span>
+            <span class="skill-pill">Algorithms</span>
+            <span class="skill-pill">OOP</span>
+            <span class="skill-pill">System Design</span>
+            <span class="skill-pill">Problem Solving</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Cloud & DevOps Roadmap -->
+      <div style="margin-top:64px" class="reveal">
+        <div style="text-align:center;margin-bottom:8px">
+          <div class="tag"
+            style="background:rgba(6,214,160,0.1);border-color:rgba(6,214,160,0.25);color:var(--accent-3)">☁️ Cloud &
+            DevOps Journey</div>
+        </div>
+        <h3
+          style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;text-align:center;margin-bottom:8px">
+          My Road to Cloud Engineering</h3>
+        <p style="text-align:center;color:var(--text-1);font-size:0.9rem;margin-bottom:0">Progressing steadily from
+          full-stack foundations toward cloud-native and DevOps expertise.</p>
+
+        <div class="roadmap-grid">
+          <div class="roadmap-item active reveal">
+            <div class="roadmap-icon">💻</div>
+            <div class="roadmap-label">Full Stack Dev</div>
+            <div class="roadmap-sub">MERN · REST APIs · Databases</div>
+            <span class="roadmap-status done">✓ Done</span>
+          </div>
+          <div class="roadmap-item active reveal reveal-delay-1">
+            <div class="roadmap-icon">☁️</div>
+            <div class="roadmap-label">AWS Fundamentals</div>
+            <div class="roadmap-sub">EC2 · S3 · IAM · VPC · CLI</div>
+            <span class="roadmap-status inprogress">In Progress</span>
+          </div>
+          <div class="roadmap-item reveal reveal-delay-2">
+            <div class="roadmap-icon">🐳</div>
+            <div class="roadmap-label">Containerization</div>
+            <div class="roadmap-sub">Docker · Docker Compose</div>
+            <span class="roadmap-status inprogress">In Progress</span>
+          </div>
+          <div class="roadmap-item reveal reveal-delay-3">
+            <div class="roadmap-icon">🔁</div>
+            <div class="roadmap-label">CI/CD Pipelines</div>
+            <div class="roadmap-sub">GitHub Actions · Jenkins</div>
+            <span class="roadmap-status next">Up Next</span>
+          </div>
+          <div class="roadmap-item reveal reveal-delay-3">
+            <div class="roadmap-icon">⚙️</div>
+            <div class="roadmap-label">Infra as Code</div>
+            <div class="roadmap-sub">Terraform · CloudFormation</div>
+            <span class="roadmap-status next">Up Next</span>
+          </div>
+          <div class="roadmap-item reveal reveal-delay-3">
+            <div class="roadmap-icon">☸️</div>
+            <div class="roadmap-label">Orchestration</div>
+            <div class="roadmap-sub">Kubernetes · EKS</div>
+            <span class="roadmap-status next">Planned</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================ -->
+  <!--  PROJECTS                                                     -->
+  <!-- ============================================================ -->
+  <section id="projects" class="section-pad" aria-label="Projects">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:560px;margin:0 auto 56px;">
+        <div class="tag">🚀 Portfolio</div>
+        <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+        <p class="section-sub" style="margin:0 auto">
+          Real-world applications built to solve real problems using modern technologies.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Naan Mudhalvan -->
+        <article class="project-card tilt reveal" aria-label="Naan Mudhalvan Project">
+          <div class="project-card-banner" style="background:linear-gradient(135deg,#1a1a4e,#0f3460);">
+            🏛️
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Naan Mudhalvan – E-Learning Platform</h3>
+            <p class="project-desc">A full-stack e-learning web application built as part of the Tamil Nadu government's
+              Naan Mudhalvan skill development initiative.</p>
+            <div class="project-problem"><strong>Problem:</strong> Students lacked accessible digital platforms for
+              structured skill learning in regional languages.</div>
+            <div class="project-solution"><strong>Solution:</strong> Built a comprehensive course management system with
+              user authentication, progress tracking, and content delivery.</div>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">JWT Auth</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/JeevaNandan" target="_blank" rel="noopener" class="project-link">⬡ GitHub</a>
+              <a href="#" class="project-link">🌐 Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Task Manager -->
+        <article class="project-card tilt reveal reveal-delay-1" aria-label="Task Manager App">
+          <div class="project-card-banner" style="background:linear-gradient(135deg,#0a2a1e,#0d4a32);">
+            ✅
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">ProTask – Full Stack Task Manager</h3>
+            <p class="project-desc">A real-time collaborative task management application with role-based access
+              control, drag-and-drop boards, and team workspaces.</p>
+            <div class="project-problem"><strong>Problem:</strong> Teams needed a lightweight, self-hosted alternative
+              to premium project management tools.</div>
+            <div class="project-solution"><strong>Solution:</strong> Built a Kanban-style board with real-time updates
+              using Socket.io and secure JWT-based team auth.</div>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Socket.io</span>
+              <span class="tech-tag">JWT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/JeevaNandan" target="_blank" rel="noopener" class="project-link">⬡ GitHub</a>
+              <a href="#" class="project-link">🌐 Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: E-Commerce -->
+        <article class="project-card tilt reveal reveal-delay-2" aria-label="E-Commerce Platform">
+          <div class="project-card-banner" style="background:linear-gradient(135deg,#2d0a1e,#6b1a45);">
+            🛒
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">ShopNow – MERN E-Commerce Platform</h3>
+            <p class="project-desc">A production-grade e-commerce platform featuring product listings, shopping cart,
+              order management, and admin dashboard.</p>
+            <div class="project-problem"><strong>Problem:</strong> Small vendors needed an affordable, customizable
+              online storefront with full inventory control.</div>
+            <div class="project-solution"><strong>Solution:</strong> Developed a full-featured store with cart
+              persistence, order tracking, and a secure admin panel.</div>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Redux</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/JeevaNandan" target="_blank" rel="noopener" class="project-link">⬡ GitHub</a>
+              <a href="#" class="project-link">🌐 Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Weather App -->
+        <article class="project-card tilt reveal" aria-label="Weather Dashboard">
+          <div class="project-card-banner" style="background:linear-gradient(135deg,#0a1a2e,#1a4a7a);">
+            🌤️
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">WeatherScope – Real-Time Dashboard</h3>
+            <p class="project-desc">A responsive weather dashboard that fetches real-time data from the OpenWeatherMap
+              API with 7-day forecasts and interactive charts.</p>
+            <div class="project-problem"><strong>Problem:</strong> Existing weather apps were cluttered with ads and
+              lacked clean developer-friendly UX.</div>
+            <div class="project-solution"><strong>Solution:</strong> Built a clean, fast SPA with geolocation, search
+              history, and animated weather icons.</div>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">OpenWeather API</span>
+              <span class="tech-tag">Chart.js</span>
+              <span class="tech-tag">CSS Modules</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/JeevaNandan" target="_blank" rel="noopener" class="project-link">⬡ GitHub</a>
+              <a href="#" class="project-link">🌐 Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Blog Platform -->
+        <article class="project-card tilt reveal reveal-delay-1" aria-label="Blog Platform">
+          <div class="project-card-banner" style="background:linear-gradient(135deg,#1a120a,#4a2f0a);">
+            📝
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">DevBlog – Full Stack Blog Engine</h3>
+            <p class="project-desc">A developer-focused blogging platform with Markdown support, tag-based filtering,
+              comments system, and SEO-optimized pages.</p>
+            <div class="project-problem"><strong>Problem:</strong> Developers wanted a lightweight, self-hosted blog
+              without bloated CMSes or subscription fees.</div>
+            <div class="project-solution"><strong>Solution:</strong> Created a fast, SEO-optimized blog engine with rich
+              text editing and category management.</div>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Markdown</span>
+              <span class="tech-tag">Express</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/JeevaNandan" target="_blank" rel="noopener" class="project-link">⬡ GitHub</a>
+              <a href="#" class="project-link">🌐 Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: Portfolio Builder -->
+        <article class="project-card tilt reveal reveal-delay-2" aria-label="Portfolio Builder">
+          <div class="project-card-banner" style="background:linear-gradient(135deg,#1a0a2e,#3d1f7a);">
+            💼
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">PortfolioGen – No-Code Portfolio Builder</h3>
+            <p class="project-desc">A no-code portfolio generator that allows developers to create beautiful portfolio
+              sites by filling a form, powered by dynamic templates.</p>
+            <div class="project-problem"><strong>Problem:</strong> Junior developers struggled to create professional
+              portfolios without design experience.</div>
+            <div class="project-solution"><strong>Solution:</strong> Built a form-driven builder with customizable
+              themes and one-click deploy via GitHub Pages.</div>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">GitHub API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/JeevaNandan" target="_blank" rel="noopener" class="project-link">⬡ GitHub</a>
+              <a href="#" class="project-link">🌐 Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================ -->
+  <!--  EXPERIENCE                                                   -->
+  <!-- ============================================================ -->
+  <section id="experience" class="section-pad" style="background:var(--bg-1)" aria-label="Experience">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:560px;margin:0 auto 56px;">
+        <div class="tag">💼 Work History</div>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-sub" style="margin:0 auto">
+          Real-world development experience through internships and government initiatives.
+        </p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">💼</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-title">MERN Stack Developer – Intern</div>
+                <div class="timeline-company">App Innovation Company</div>
+              </div>
+              <div class="timeline-duration">1 Month · 2024</div>
+            </div>
+            <div class="timeline-location">📍 Coimbatore, Tamil Nadu, India</div>
+            <ul class="timeline-list">
+              <li>Developed responsive web applications using the complete MERN stack (MongoDB, Express.js, React,
+                Node.js)</li>
+              <li>Built modular and reusable React components with hooks and state management</li>
+              <li>Designed and implemented RESTful APIs using Node.js and Express.js for CRUD operations</li>
+              <li>Worked with MongoDB for data modeling, schema design, and query optimization</li>
+              <li>Collaborated with the development team on real-world client tasks using Git version control</li>
+              <li>Integrated third-party APIs and handled authentication using JWT tokens</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-dot">🏛️</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-title">Full Stack Developer</div>
+                <div class="timeline-company">Naan Mudhalvan Program – Govt. of Tamil Nadu</div>
+              </div>
+              <div class="timeline-duration">2023–2024</div>
+            </div>
+            <div class="timeline-location">📍 Tamil Nadu, India</div>
+            <ul class="timeline-list">
+              <li>Participated in the Tamil Nadu government's flagship skill development initiative for engineering
+                students</li>
+              <li>Built a production-grade full-stack web application as the capstone project</li>
+              <li>Gained hands-on exposure to complete development workflows — from requirements to deployment</li>
+              <li>Implemented user authentication, data persistence, and responsive frontend interfaces</li>
+              <li>Collaborated in a team environment simulating real industry practices</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================ -->
+  <!--  EDUCATION                                                    -->
+  <!-- ============================================================ -->
+  <section id="education" class="section-pad" aria-label="Education">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:560px;margin:0 auto 56px;">
+        <div class="tag">🎓 Academic Background</div>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="edu-card reveal" style="margin-bottom:20px">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <div class="edu-degree">B.Tech – Information Technology</div>
+          <div class="edu-school">PPG Institute of Technology</div>
+          <div class="edu-loc">📍 Coimbatore, Tamil Nadu, India</div>
+          <div class="edu-status">Currently Enrolled – Final Year (2023–2027)</div>
+        </div>
+      </div>
+
+      <div style="max-width:680px;margin:24px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px;"
+        class="reveal reveal-delay-1">
+        <div
+          style="background:rgba(6,214,160,0.07);backdrop-filter:blur(10px);border:1px solid rgba(6,214,160,0.3);border-radius:16px;padding:20px;text-align:center;">
+          <div style="font-size:1.8rem;margin-bottom:6px">☁️</div>
+          <div style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--accent-3)">Cloud
+            Engineer</div>
+          <div style="font-size:0.78rem;color:var(--text-2);margin-top:4px;">Career Aspiration #1</div>
+        </div>
+        <div
+          style="background:rgba(6,214,160,0.05);backdrop-filter:blur(10px);border:1px solid rgba(6,214,160,0.2);border-radius:16px;padding:20px;text-align:center;">
+          <div style="font-size:1.8rem;margin-bottom:6px">🔁</div>
+          <div style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--accent-3)">DevOps
+            Engineer</div>
+          <div style="font-size:0.78rem;color:var(--text-2);margin-top:4px;">Career Aspiration #2</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============================================================ -->
+  <!--  CONTACT                                                      -->
+  <!-- ============================================================ -->
+  <section id="contact" class="section-pad" style="background:var(--bg-1)" aria-label="Contact">
+    <div class="container">
+      <div class="contact-wrap">
+
+        <!-- Left -->
+        <div class="reveal">
+          <div class="tag">📬 Get in Touch</div>
+          <h2 class="section-title">Let's Work<br /><span class="text-gradient">Together</span></h2>
+          <p style="color:var(--text-1);font-size:1rem;line-height:1.8;margin-bottom:8px;">
+            I'm actively looking for full-stack and cloud engineering opportunities. Whether you have a job offer, a
+            project idea, or just want to say hi — my inbox is always open.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:jeevanandan@email.com" class="contact-link-item">
+              <div class="contact-link-icon">✉️</div>
+              <div class="contact-link-text">
+                <strong>Email</strong>
+                <span>jeevanandan@email.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/JeevaNandan" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="contact-link-icon">⬡</div>
+              <div class="contact-link-text">
+                <strong>GitHub</strong>
+                <span>github.com/JeevaNandan</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/jeeva-nandan-091132302/" target="_blank" rel="noopener"
+              class="contact-link-item">
+              <div class="contact-link-icon">🔗</div>
+              <div class="contact-link-text">
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/jeevanandan</span>
+              </div>
+            </a>
+            <div class="contact-link-item" style="cursor:default">
+              <div class="contact-link-icon">📍</div>
+              <div class="contact-link-text">
+                <strong>Location</strong>
+                <span>Coimbatore, Tamil Nadu, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrap reveal reveal-delay-1">
+          <div class="form-title">Send a Message 💬</div>
+
+          <form id="contactForm" onsubmit="handleSubmit(event)" action="https://formspree.io/f/xvzvwgez" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="New message from Portfolio" />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" class="form-control" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" class="form-control" placeholder="Last name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-control"
+                placeholder="Job opportunity / Project collaboration..." />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-control" rows="5"
+                placeholder="Tell me about the opportunity or project..." required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit" id="submitBtn">
+              <span id="submitText">Send Message ✉️</span>
+            </button>
+
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent! I'll get back to you within 24 hours.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!--  FOOTER                                                       -->
+  <!-- ============================================================ -->
+  <footer>
+    <div class="container">
+      <p style="font-family:var(--font-display);font-weight:700;font-size:1.1rem;margin-bottom:8px;"
+        class="text-gradient">Jeeva Nandan</p>
+      <p>☁️ Aspiring Cloud Engineer & DevOps · Full Stack Developer · Coimbatore, India</p>
+      <p style="margin-top:8px;">
+        Built with ❤️ using HTML, CSS & JavaScript ·
+        <a href="https://github.com/JeevaNandan" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://linkedin.com/in/jeevanandan" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+      <p style="margin-top:8px;font-size:0.78rem;">© 2025 Jeeva Nandan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
